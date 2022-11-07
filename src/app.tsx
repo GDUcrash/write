@@ -45,7 +45,7 @@ export default class App extends Component {
                     ) }
                 </div>
                 <NotificationManager ref={this.notificationManagerRef} />
-                <div className="info">Alpha v0.1.0</div>
+                <div className="info">Alpha v0.1.1</div>
             </>
         );
     }
