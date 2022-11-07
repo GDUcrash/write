@@ -1,0 +1,136 @@
+.write-area {
+    height: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1064px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: auto;
+}
+
+.write-container {
+    width: 100%;
+    padding: 12px 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.write-container:first-child {
+    min-height: 32px;
+}
+.write-container:hover {
+    background: #fff1;
+}
+.write-container:has(.write-area-input):hover {
+    background: none;
+}
+
+.write-area .write-area-input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.5;
+    min-height: 64px;
+    resize: none;
+    font-family: Manrope, sans-serif;
+    font-weight: 800;
+    background: #ffffff16;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.write-area {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #aaa;
+    margin: 0;
+    cursor: pointer;
+    min-height: 48px;
+    flex-grow: 0;
+    word-wrap: break-word;
+}
+
+.write-area * {
+    margin: 0;
+    margin-bottom: 20px;
+}
+.write-area *:last-child {
+    margin-bottom: 0;
+}
+
+.write-area h1, .write-area h2 {
+    padding-bottom: 10px;
+    border-bottom: 5px solid #222;
+    border-radius: 8px;
+}
+
+.write-area h1 {
+    margin-top: 50px;
+}
+.write-area h1:first-child {
+    margin-top: 0;
+}
+
+.write-area h2 {
+    margin-top: 30px;
+}
+.write-area h2:first-child {
+    margin-top: 0;
+}
+
+.write-area hr {
+    border: 1px solid #222;
+    border-image: linear-gradient(90deg, transparent 46%, #222 46%) 420 round;
+    border-image-repeat: repeat;
+}
+
+.write-area em {
+    display: inline-block;
+    transform: skewX(-10deg);
+    margin: 0;
+}
+
+.write-area strong {
+    display: inline;
+}
+
+.write-area code {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 24px;
+    background: #0d1026;
+    color: #7381e6;
+    border-radius: 8px;
+    translate: 0 -4px;
+}
+
+.write-area pre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.write-area pre code {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.write-area a {
+    font-family: monospace;
+}
+.write-area a:hover {
+    filter: brightness(130%);
+}
+
+.write-area img {
+    border-radius: 10px;
+    height: 360px;
+    margin-right: 20px;
+}

@@ -1,0 +1,50 @@
+.notifications {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notification-body {
+    width: 200px;
+    padding: 18px 20px;
+    background: #20213b;
+    border-radius: 8px;
+    border: 1px solid #5156e4;
+    font-size: 16px;
+    animation: notifAppear 4s ease;
+    animation-fill-mode: both;
+}
+.notification-body.success {
+    background: #0c2d20;
+    border: 1px solid #51e478;
+}
+.notification-body.error {
+    background: #2d0c15;
+    border: 1px solid #eb2b5e;
+}
+
+@keyframes notifAppear {
+    0% {
+        translate: 200px;
+        max-height: 100px;
+    }
+    6% {
+        translate: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+        max-height: 100px;
+        margin: 0;
+    }
+    100% {
+        max-height: 0;
+        opacity: 0;
+        margin: -20px;
+    }
+}
